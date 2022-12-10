@@ -76,6 +76,8 @@ public class ViewMainController {
         stage.setTitle("Score Information");
         stage.setScene(scene);
         stage.show();
+
+        ServerProcess.synchronizeTables();
     }
 
     @FXML

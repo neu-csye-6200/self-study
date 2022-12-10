@@ -66,6 +66,8 @@ public class ViewForumController {
         stage.setTitle("Forum");
         stage.setScene(scene);
         stage.show();
+
+        ServerProcess.synchronizeTables();
     }
 
     @FXML

@@ -219,7 +219,8 @@ public class ServerProcess {
             while(rs.next())
                 listUid.add(rs.getString("id"));
         } catch (SQLException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            System.out.println("synchronize collision detected");
         }
         for(String uid: listUid)
             signUp(uid);
