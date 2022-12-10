@@ -91,7 +91,7 @@ CREATE TABLE `distribution` (
 
 LOCK TABLES `distribution` WRITE;
 /*!40000 ALTER TABLE `distribution` DISABLE KEYS */;
-INSERT INTO `distribution` VALUES ('1','cs',0),('1','is',0),('1','nlp',0),('1','ses',0),('10','cs',0),('10','is',0),('10','nlp',0),('10','ses',0),('123','cs',10),('123','is',10),('123','nlp',8),('123','ses',30),('2','cs',0),('2','is',0),('2','nlp',0),('2','ses',0),('3','cs',0),('3','is',0),('3','nlp',0),('3','ses',0),('4','cs',0),('4','is',0),('4','nlp',0),('4','ses',0),('456','cs',21),('456','is',15),('456','nlp',1),('456','ses',10),('5','cs',0),('5','is',0),('5','nlp',0),('5','ses',0),('6','cs',0),('6','is',0),('6','nlp',0),('6','ses',0),('7','cs',0),('7','is',0),('7','nlp',0),('7','ses',0),('789','cs',0),('789','is',0),('789','nlp',0),('789','ses',6),('8','cs',0),('8','is',0),('8','nlp',0),('8','ses',0),('9','cs',0),('9','is',0),('9','nlp',0),('9','ses',0);
+INSERT INTO `distribution` VALUES ('1','cs',12),('1','is',23),('1','nlp',21),('1','ses',31),('10','cs',13),('10','is',14),('10','nlp',12),('10','ses',21),('123','cs',10),('123','is',10),('123','nlp',8),('123','ses',30),('2','cs',14),('2','is',31),('2','nlp',23),('2','ses',43),('3','cs',21),('3','is',45),('3','nlp',32),('3','ses',21),('4','cs',14),('4','is',16),('4','nlp',2),('4','ses',31),('456','cs',21),('456','is',15),('456','nlp',1),('456','ses',10),('5','cs',43),('5','is',32),('5','nlp',44),('5','ses',11),('6','cs',22),('6','is',33),('6','nlp',44),('6','ses',11),('7','cs',22),('7','is',33),('7','nlp',12),('7','ses',11),('789','cs',22),('789','is',33),('789','nlp',11),('789','ses',23),('8','cs',4),('8','is',12),('8','nlp',23),('8','ses',21),('9','cs',23),('9','is',32),('9','nlp',34),('9','ses',2);
 /*!40000 ALTER TABLE `distribution` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -144,29 +144,6 @@ LOCK TABLES `favorites` WRITE;
 /*!40000 ALTER TABLE `favorites` DISABLE KEYS */;
 INSERT INTO `favorites` VALUES (7,1,8,'2022-12-02 10:38:31'),(10,2,5,'2022-12-02 10:45:44'),(14,2,2,'2022-12-02 10:46:07'),(15,2,1,'2022-12-02 10:46:08'),(17,2,3,'2022-12-03 18:34:53'),(18,2,8,'2022-12-03 18:34:56'),(20,3,5,'2022-12-03 22:53:50'),(21,4,4,'2022-12-04 21:35:52');
 /*!40000 ALTER TABLE `favorites` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `field`
---
-
-DROP TABLE IF EXISTS `field`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `field` (
-  `field` varchar(45) NOT NULL,
-  PRIMARY KEY (`field`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `field`
---
-
-LOCK TABLES `field` WRITE;
-/*!40000 ALTER TABLE `field` DISABLE KEYS */;
-INSERT INTO `field` VALUES ('cs'),('is'),('nlp'),('ses');
-/*!40000 ALTER TABLE `field` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -269,7 +246,7 @@ CREATE TABLE `score` (
 
 LOCK TABLES `score` WRITE;
 /*!40000 ALTER TABLE `score` DISABLE KEYS */;
-INSERT INTO `score` VALUES ('1',0,0),('10',0,0),('123',11,44),('2',0,0),('3',0,0),('4',0,0),('456',0,2),('5',0,0),('6',0,0),('7',0,0),('789',0,6),('8',0,0),('9',0,0);
+INSERT INTO `score` VALUES ('1',15,30),('10',15,30),('123',11,44),('2',10,15),('3',6,24),('4',6,7),('456',24,2),('5',56,45),('6',21,32),('7',7,17),('789',24,6),('8',12,34),('9',32,0);
 /*!40000 ALTER TABLE `score` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -474,4 +451,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-12-10 13:09:47
+-- Dump completed on 2022-12-10 15:55:43
